@@ -12,6 +12,9 @@
   h1,
   .h1 {
     color: $jumbotron-heading-color;
+    font-size: 68px;
+    font-weight: 500;
+    letter-spacing: 24px;
   }
   p {
     margin-bottom: ($jumbotron-padding / 2);
@@ -31,9 +34,14 @@
     max-width: 100%;
   }
 
+  .jumbotron.home {
+    background-image: url('../images/header1.jpg') center center;
+    background-size: cover;
+  }
+
   @media screen and (min-width: $screen-sm-min) {
-    padding-top:    ($jumbotron-padding * 1.6);
-    padding-bottom: ($jumbotron-padding * 1.6);
+    padding-top:    ($jumbotron-padding * 5);
+    padding-bottom: ($jumbotron-padding * 5);
 
     .container & {
       padding-left:  ($jumbotron-padding * 2);

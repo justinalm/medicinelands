@@ -32,6 +32,10 @@ body {
   background-color: $body-bg;
 }
 
+article {
+  padding: $padding-large-horizontal;
+}
+
 // Reset fonts for relevant elements
 input,
 button,
@@ -67,7 +71,7 @@ a {
 // ensures we don't break anyone's use of the element.
 
 figure {
-  margin: 0;
+  margin: 0 0 $padding-large-horizontal 0;
 }
 
 
