@@ -6,6 +6,7 @@
 // Wrapper for the slide container and indicators
 .carousel {
   position: relative;
+  margin: 0 0 $padding-large-horizontal 0;
 }
 
 .carousel-inner {
@@ -61,6 +62,19 @@
     left: 100%;
   }
 
+}
+
+// Fading Text
+// -----------
+
+.item.next .carousel-caption {
+    opacity: 0;
+}
+
+.carousel-caption {
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
 }
 
 // Left/right controls for nav
@@ -192,6 +206,7 @@
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 125%;
   color: $carousel-caption-color;
   text-align: left;
   text-shadow: $carousel-text-shadow;
