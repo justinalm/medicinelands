@@ -212,6 +212,9 @@
   text-shadow: $carousel-text-shadow;
   & .btn {
     text-shadow: none; // No shadow for button elements in carousel-caption
+    border: 3px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
   }
   & h1 {
     color: #ffffff;

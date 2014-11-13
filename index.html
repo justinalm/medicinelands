@@ -50,6 +50,7 @@ the comments to familiarize yourself with HTML.
 <div class="container-fluid">
 
   <section>
+    <h2 class="text-center">Fading Tabs</h2>
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
       <li role="presentation" class="active"><a href="#features" role="tab" data-toggle="tab">Features</a></li>
@@ -59,17 +60,41 @@ the comments to familiarize yourself with HTML.
 
     <!-- Tab panes -->
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="features">
-        <img src="http://placehold.it/1400x450/d08932/ffffff">
+      <div role="tabpanel" class="tab-pane fade in active" id="features">
+        <img src="http://placehold.it/1400x450/949a42/ffffff">
       </div>
-      <div role="tabpanel" class="tab-pane" id="architecturalControls">
+      <div role="tabpanel" class="tab-pane fade" id="architecturalControls">
         <img src="http://placehold.it/1400x450/2569aa/ffffff">
       </div>
-      <div role="tabpanel" class="tab-pane" id="location">
+      <div role="tabpanel" class="tab-pane fade" id="location">
         <img src="http://placehold.it/1400x450/c3a352/ffffff">
       </div>
     </div>
   </section>
+</div><!-- /container-fluid -->
+
+<h2 class="text-center">Google Map Inside Tab Panel</h2>
+
+<ul class="nav nav-tabs" id="myTab">
+    <li class="active"><a id="mapEen" href="#mapeen" data-toggle="tab">Restaurants</a></li>
+    <li><a id="mapTwee" href="#maptwee" data-toggle="tab">Schools</a></li>
+    <li><a id="mapDrie" href="#mapdrie" data-toggle="tab">Essentials</a></li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade in active" id="mapeen">
+        <div id="map-een"></div>
+    </div>
+    <div class="tab-pane fade" id="maptwee">
+        <div id="map-twee"></div>
+    </div>
+    <div class="tab-pane fade" id="mapdrie">
+        <div id="map-drie"></div>
+    </div>
+</div>
+
+<div class="container-fluid">
+
   <section>
     <h1 class="other-class">Headings &amp; Copy</h1>
     <h1 class="other-class">First Header h1</h1>
