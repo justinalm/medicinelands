@@ -1,0 +1,60 @@
+header {
+	line-height: 0;
+	width: 100%;
+	background: #ffffff;
+}
+.headerNavigation {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	height: auto!important;
+}
+
+.logo {
+	display: block;
+	float: left;
+	vertical-align: top;
+	width: 35%;
+	padding: 16px;
+}
+
+ul.headerNavigationLinks {
+	display: block;
+	float: right;
+	width: 65%;
+	list-style: none;
+	text-align: right;
+	font-family: $font-family-sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 0;
+	margin: 0;
+}
+
+ul.headerNavigationLinks > li {
+	vertical-align: top;
+	display: inline-block;
+}
+
+ul.headerNavigationLinks > li > a {
+	display: block;
+	line-height: 0;
+	padding: 32px;
+	text-decoration: none;
+}
+
+ul.headerNavigationLinks > li > a:hover {
+	background: #CCC;
+}
+
+ul.headerNavigationLinks > li > a:active,
+ul.headerNavigationLinks > li > a:visited {
+	text-decoration: underline;
+}
+
+ul.headerNavigationLinks > li > a.registerHeader {
+	padding: 16px;
+	margin: 14px;
+	border: 2px solid #cccccc;
+}
