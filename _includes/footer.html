@@ -8,3 +8,25 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+	/* Move the Header */
+
+	$(function(){
+	 var shrinkHeader = 300;
+	  $(window).scroll(function() {
+	    var scroll = getCurrentScroll();
+	      if ( scroll >= shrinkHeader ) {
+	           $('.header').addClass('shrink');
+	        }
+	        else {
+	            $('.header').removeClass('shrink');
+	        }
+	  });
+	function getCurrentScroll() {
+	    return window.pageYOffset || document.documentElement.scrollTop;
+	    }
+	});
+
+</script>

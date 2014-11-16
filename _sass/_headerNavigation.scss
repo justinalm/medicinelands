@@ -1,16 +1,42 @@
-header {
-	line-height: 0;
+.header {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
 	width: 100%;
+	height: 145px;
+	line-height: 0;
 	background: #ffffff;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
+
+.shrink {
+	height: 64px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
 .headerNavigation {
 	display: inline-block;
 	vertical-align: middle;
 	width: 100%;
-	height: auto!important;
 }
 
 .logo {
+	display: block;
+	float: left;
+	vertical-align: top;
+	width: 35%;
+	padding: 52px 16px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.header.shrink .logo {
 	display: block;
 	float: left;
 	vertical-align: top;
@@ -26,11 +52,18 @@ ul.headerNavigationLinks {
 	text-align: right;
 	font-family: $font-family-sans-serif;
 	font-size: 12px;
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	padding: 0;
+	padding: 40px 0;
 	margin: 0;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.header.shrink ul.headerNavigationLinks {
+	padding: 0;
 }
 
 ul.headerNavigationLinks > li {
@@ -46,7 +79,7 @@ ul.headerNavigationLinks > li > a {
 }
 
 ul.headerNavigationLinks > li > a:hover {
-	background: #CCC;
+	background: #dddddd;
 }
 
 ul.headerNavigationLinks > li > a:active,
