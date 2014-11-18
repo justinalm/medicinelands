@@ -8,6 +8,11 @@
   margin: $line-height-computed 0;
   list-style: none;
   text-align: center;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 700;
+  font-size: 12px;
   @include clearfix();
   li {
     display: inline;
@@ -17,7 +22,7 @@
       padding: 5px 14px;
       background-color: $pager-bg;
       border: 1px solid $pager-border;
-      border-radius: $pager-border-radius;
+      border-radius: 0;
     }
 
     > a:hover,

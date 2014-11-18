@@ -9,6 +9,11 @@
   list-style: none;
   background-color: $breadcrumb-bg;
   border-radius: $border-radius-base;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 700;
+  font-size: 12px;
 
   > li {
     display: inline-block;

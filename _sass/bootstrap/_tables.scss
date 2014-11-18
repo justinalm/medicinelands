@@ -17,6 +17,11 @@ th {
   width: 100%;
   max-width: 100%;
   margin-bottom: $line-height-computed;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 700;
+  font-size: $font-size-small;
   // Cells
   > thead,
   > tbody,
