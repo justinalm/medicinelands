@@ -20,7 +20,7 @@ $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 $brand-primary:         rgba(109, 110, 112, 1) !default;
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
+$brand-warning:         #d08932 !default;
 $brand-danger:          #d9534f !default;
 $brand-orange:          #d08932 !default;
 
@@ -485,15 +485,15 @@ $state-success-bg:               #dff0d8 !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
 $state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
+$state-info-bg:                  #bcb3ac !default;
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
 
 $state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
+$state-warning-bg:               #d08932 !default;
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
 
 $state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
+$state-danger-bg:                #fd782e !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 
 
@@ -753,7 +753,7 @@ $well-border:                 darken($well-bg, 7%) !default;
 $badge-color:                 #fff !default;
 //** Linked badge text color on hover
 $badge-link-hover-color:      #fff !default;
-$badge-bg:                    $gray-light !default;
+$badge-bg:                    #D08932 !default;
 
 //** Badge text color in active nav link
 $badge-active-color:          $link-color !default;
