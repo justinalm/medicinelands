@@ -105,29 +105,34 @@
 	}
 
 	ul.headerNavigationLinks > li {
-		vertical-align: top;
 		display: inline-block;
 	}
 
 	ul.headerNavigationLinks > li > a {
+		border-bottom: 3px solid $white;
+		padding: 0 0 15px 0px;
 		display: block;
-		line-height: 0;
-		padding: 32px 12px;
-		text-decoration: none;
+		margin: 0 25px;
 	}
 
 	ul.headerNavigationLinks > li > a:hover {
-		background: #dddddd;
+		border-bottom: 3px solid $lightGrey;
+		padding: 0 0 15px 0px;
+		display: block;
+		margin: 0 25px;
 	}
 
 	ul.headerNavigationLinks > li > a:active,
-	ul.headerNavigationLinks > li > a:visited {
-		text-decoration: underline;
+	ul.headerNavigationLinks > li > a.current {
+		border-bottom: 3px solid $orange;
+		padding: 0 0 15px 0px;
+		display: block;
+		margin: 0 25px;
 	}
 
 	ul.headerNavigationLinks > li > a.registerHeader {
 		padding: 16px;
 		margin: 14px 18px 8px 4px;
-		border: 2px solid #cccccc;
+		border: 2px solid $lightGrey;
 	}
 }
