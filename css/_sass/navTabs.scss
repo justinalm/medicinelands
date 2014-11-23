@@ -71,12 +71,11 @@ ul.amenitiesLists li p {
 ul.amenitiesLists > li > h2 > span.tabNumeral {
 	display: inline-block;
 	vertical-align: top;
-	width: 15px;
-	font-size: 10px;
-	letter-spacing: 2px;
-	padding: 7px 0px 0 0;
+	font-size: 12px;
+	letter-spacing: normal;
+	padding: 5px 0 0 0;
 	margin-right: 13px;
-	border-bottom: 3px solid;
+	border-bottom: 2px solid;
 }
 
 //
@@ -101,6 +100,7 @@ ul.mapsTabs li {
 	padding: 25px;
 	cursor: pointer;
 	@include trasition;
+	border-right: 1px solid #ededed;
 	overflow: hidden;
 }
 
