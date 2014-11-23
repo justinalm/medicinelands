@@ -1,0 +1,154 @@
+//
+// Tabs for the Amenities Features
+//
+
+ul.amenitiesTabs {
+	list-style: none;
+	background: $darkGrey;
+	@include smallCapsProximaNova;
+	color: $white;
+	text-align: center;
+	line-height: 0;
+	margin: 0px;
+	padding: 25px;
+	overflow: hidden;
+}
+
+ul.amenitiesTabs li {
+	display: inline-block;
+	background: none;
+	text-align: center;
+	padding: 25px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+ul.amenitiesTabs li.current {
+	padding: 22px;
+	@include buttonBorder;
+	border-color: $orange;
+}
+
+.amenitiesTabContent {
+	display: none;
+	background: #ededed;
+	text-align: center;
+	line-height: 0;
+	overflow: hidden;
+}
+
+.amenitiesTabContent.current {
+	display: inherit;
+	line-height: 0;
+}
+
+ul.amenitiesLists {
+	display: block;
+	list-style: none;
+	padding: 2%;
+	margin: 0;
+	overflow: hidden;
+	line-height: 1.6;
+}
+
+ul.amenitiesLists li {
+	display: inline-block;
+	width: 48%;
+	padding: $verticalPadding $verticalPadding 0 $verticalPadding;
+	text-align: left;
+	overflow: hidden;
+}
+
+ul.amenitiesLists li h2 {
+	padding: 0;
+	margin: 0;
+}
+
+ul.amenitiesLists li p {
+	margin: 0 0 $verticalPadding 0;
+}
+
+ul.amenitiesLists > li > h2 > span.tabNumeral {
+	display: inline-block;
+	vertical-align: top;
+	width: 15px;
+	font-size: 10px;
+	letter-spacing: 2px;
+	padding: 7px 0px 0 0;
+	margin-right: 13px;
+	border-bottom: 3px solid;
+}
+
+//
+// Tabs for the Mapbox Embeds
+//
+
+ul.mapsTabs {
+	@include smallCapsProximaNova;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	overflow: hidden;
+}
+
+ul.mapsTabs li {
+	display: block;
+	float: left;
+	background: none;
+	color: $darkGrey;
+	width: 20%;
+	text-align: center;
+	padding: 25px;
+	cursor: pointer;
+	@include trasition;
+	overflow: hidden;
+}
+
+ul.mapsTabs li.current {
+	background: #ededed;
+	color: $darkGrey;
+}
+
+.tab-content {
+	display: none;
+	background: #ededed;
+	text-align: center;
+	line-height: 0;
+	overflow: hidden;
+}
+
+.tab-content.current {
+	display: inherit;
+	line-height: 0;
+}
+
+.mapLists {
+	display: inline-block;
+	list-style: none;
+	@include smallCapsProximaNova;
+	margin: 20px 25px 15px 20px;
+	padding: 0;
+}
+
+.mapLists li {
+	margin: 0 0 5px 0;
+	letter-spacing: 4px;
+}
+
+.mapLists:nth-of-type(3n+3) {
+	clear: left;
+}
+
+.badge {
+	display: inline-block;
+	vertical-align: middle;
+	height: 30px;
+	width: 30px;
+	color: #FFF;
+	background: $orange;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 2px;
+	margin: 0 7px 0 0;
+	border-radius: 100px;
+}

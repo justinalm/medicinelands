@@ -1,0 +1,34 @@
+/* The uppercase sans-serif */
+/* The uppercase sans-serif */
+
+@mixin smallCapsProximaNova() {
+	font-family: $sans-serif-type;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: $headings-line-height;
+	color: $darkGrey;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+}
+
+@mixin navigationShadow() {
+	-webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+@mixin boxSizing() {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin buttonBorder() {
+	border: 3px solid $darkGrey;
+}
+
+@mixin trasition() {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}

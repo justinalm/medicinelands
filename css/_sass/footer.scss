@@ -1,0 +1,23 @@
+footer {
+	@include smallCapsProximaNova;
+	color: $white;
+	background: url("../images/terrainMapsGrey.jpg");
+	background-size: 1600px 937px;
+	background-position: center;
+	padding: $verticalPadding $horizontalPadding;
+	overflow: hidden;
+}
+
+ul.additionalLinks {
+	font-size: 12px;
+	width: auto;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.additionalLinks > li {
+	float: left;
+	margin: 0 0 0 2%;
+}

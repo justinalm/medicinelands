@@ -1,0 +1,30 @@
+body {
+	font-family: $sans-serif-type;
+}
+
+a {
+	text-decoration: none;
+	color: $darkGrey;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $sans-serif-type;
+	font-weight: $headings-font-weight;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+
+h2.greyBackground {
+	display: block;
+	color: $white;
+	background: $darkGrey;
+	height: 60px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 60px;
+	margin: 0;
+}
+
+p {
+	font-family: $serif-type;
+}

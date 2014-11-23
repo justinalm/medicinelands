@@ -1,9 +1,28 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# This is the main scss file we import into
 ---
-@charset "utf-8";
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "bootstrap"
-;
+// Reset and dependencies
+@import "normalize";
+
+// Brand, Type, Color, and Layout Variables
+@import "variables";
+@import "mixins";
+
+// Type
+@import "type";
+
+// Grid
+@import "layout";
+@import "grid";
+
+// Components
+@import "headerNavigation";
+@import "navTabs";
+@import "footer";
+
+// Images, Maps, and Video
+@import "visualMedia";
+
+// Animations
+@import "animate";

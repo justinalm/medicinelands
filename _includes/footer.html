@@ -1,32 +1,22 @@
 <footer>
-	<div class="container-fluid">
-		<h1>Footer</h1>
-		<small>© 2014 Some company name</small>
-		<address>email@email.com</address>
+	<ul class="additionalLinks">
+		<li><a>Developer</a></li>
+		<li><a>Customer Satisfaction Survey</a></li>
+		<li><a>Privacy Policy</a></li>
+		<li><a>Legal</a></li>
+	</ul>
+	<ul>
+		<li><a>Twitter</a></li>
+		<li><a>Facebook</a></li>
+		<li><a>Register</a></li>
+	</ul>
+	<div>
+		<img src="/images/medicineHatLogo@2x.png" width="343px"/>
+	</div>
+	<div>
+		<img src="/images/landAndPropertiesLogo@2x.png" width="314px"/>
 	</div>
 </footer>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
-
-<script type="text/javascript">
-
-	/* Move the Header */
-
-	$(function(){
-	 var shrinkHeader = 100;
-	  $(window).scroll(function() {
-	    var scroll = getCurrentScroll();
-	      if ( scroll >= shrinkHeader ) {
-	           $('.header').addClass('shrink');
-	        }
-	        else {
-	            $('.header').removeClass('shrink');
-	        }
-	  });
-	function getCurrentScroll() {
-	    return window.pageYOffset || document.documentElement.scrollTop;
-	    }
-	});
-
-</script>
+<script type="text/javascript" src="/javascripts/ranchlands.js"></script>
