@@ -1,0 +1,43 @@
+
+.header {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 72px;
+	line-height: 0;
+	background: $white;
+	@include trasition;
+}
+
+.shrink {
+	height: 72px;
+	@include navigationShadow;
+}
+
+.headerNavigation {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.logo {
+	display: block;
+	float: left;
+	vertical-align: top;
+	width: 80%;
+	padding: 24px;
+	@include trasition;
+}
+
+.header.shrink .logo {
+	display: block;
+	float: left;
+	vertical-align: top;
+	width: 80%;
+	padding: 24px;
+}
+ul.headerNavigationLinks {
+	display: none;
+}
