@@ -8,41 +8,34 @@ Add your own modules and components for easy theme styling,
 copy the partials for building a prototype. Or just read
 the comments to familiarize yourself with HTML.
 -->
-<section>
-  {% include mapBox.html %}
-</section>
 
 <section>
-  {% include amenitiesTabs.html %}
-</section>
-
-<section>
-  <div class="pad">
-    <h2>Explore Ranchlands</h2>
-    <p><em>View our sitemap and available lots</em></p>
-    <a>Learn More</a>
+  <div class="featureBackgroundImage">
+    <div class="featureText pad">
+      <h2>Explore Ranchlands</h2>
+      <p><em>View our sitemap and available lots</em></p>
+      <a href"#" class="button">Learn More</a>
+    </div>
+    <img src="/images/exploreBackground.jpg"/>
   </div>
 </section>
+
+<ul class="homePageList group">
       
-<section>
-  <div class="pad">
-    <h2>Watch <span><a>Play Button</a></span> Flyover</h2>
-  </div>
-</section>
+  <li style="background: url('images/exploreBackground.jpg'); background-position: center; background-size: cover;');">
+    <a href="" style="color: white; text-align: center;"><h2>Watch<span class="videoPlayIcon"><img src="/images/mobilePagesAdvanceIcon.png" width="47"/></span>Flyover</h2></a>
+  </li>
 
-<section>
-  <div class="pad">
+  <li>
     <h2>Community</h2>
     <p><em>A new kind of community in Medicine Hat</em></p>
     <a>Learn More</a>
     <a>Play Button</a>
-  </div>
-</section>
+  </li>
 
-<section>
-  <div class="pad">
+  <li>
     <h2>News</h2>
-    <ul>
+    <ul class="newHeadlines">
       <li>Ranchalnds 32 nominated for Lorem Ipusm Award
         <a>Read More</a>
       </li>
@@ -50,17 +43,15 @@ the comments to familiarize yourself with HTML.
         <a>Read More</a>
       </li>
     </ul>
-  </div>
-</section>
+  </li>
 
-<section>
-  <div class="pad">
+  <li>
     <h2>Amenities</h2>
     <p><em>Lorem Ipsum placeholder text</em></p>
     <a>Learn More</a>
     <a>Play Button</a>
-  </div>
-</section>
+  </li>
+</ul>
   
 <!-- Typography -->
 

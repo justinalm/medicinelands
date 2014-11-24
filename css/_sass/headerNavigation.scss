@@ -12,7 +12,7 @@
 	}
 
 	.shrink {
-		height: 64px;
+		height: 72px;
 		@include navigationShadow;
 	}
 
@@ -43,7 +43,7 @@
 	}
 }
 
-@media all and (min-width: 950px) {
+@media all and (min-width: 1020px) {
 	.header {
 		position: fixed;
 		z-index: 9999;
@@ -57,7 +57,7 @@
 	}
 
 	.shrink {
-		height: 64px;
+		height: 72px;
 		@include navigationShadow;
 	}
 
@@ -81,7 +81,7 @@
 		float: left;
 		vertical-align: top;
 		width: 35%;
-		padding: 16px;
+		padding: 22px;
 	}
 
 	ul.headerNavigationLinks {
@@ -95,7 +95,7 @@
 		font-weight: 600;
 		text-transform: uppercase;
 		letter-spacing: 3px;
-		padding: 40px 0;
+		padding: 30px 0 40px 0;
 		margin: 0;
 		@include trasition;
 	}
@@ -112,22 +112,16 @@
 		border-bottom: 3px solid $white;
 		padding: 0 0 15px 0px;
 		display: block;
-		margin: 0 25px;
+		margin: 0 $horizontalPadding;
 	}
 
 	ul.headerNavigationLinks > li > a:hover {
 		border-bottom: 3px solid $lightGrey;
-		padding: 0 0 15px 0px;
-		display: block;
-		margin: 0 25px;
 	}
 
 	ul.headerNavigationLinks > li > a:active,
 	ul.headerNavigationLinks > li > a.current {
 		border-bottom: 3px solid $orange;
-		padding: 0 0 15px 0px;
-		display: block;
-		margin: 0 25px;
 	}
 
 	ul.headerNavigationLinks > li > a.registerHeader {

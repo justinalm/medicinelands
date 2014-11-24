@@ -1,0 +1,67 @@
+//
+// Homepage Features Carousel
+//
+.featureBackgroundImage {
+	position: relative;
+	width: 100%;
+	line-height: 0;
+	overflow: hidden;
+}
+
+.featureBackgroundImage img {
+	width: 100%;
+}
+
+.featureText {
+	position: absolute;
+	color: $white;
+	font-size: 150%;
+	padding: 0 25%;
+	line-height: 1.1;
+}
+
+.featureText a {
+	color: $white;
+}
+
+.button {
+	@include buttonBorder;
+}
+
+//
+// The Homepage Grid
+//
+
+ul.homePageList {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+ul.homePageList li {
+	display: block;
+	float: left;
+	width: 50%;
+	padding: $verticalPadding $horizontalPadding;
+}
+
+span.videoPlayIcon {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 20px;
+}
+
+ul.newHeadlines {
+	display: block;
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.newHeadlines li {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
