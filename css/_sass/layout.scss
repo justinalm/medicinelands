@@ -1,3 +1,9 @@
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 article {
 	margin: 145px 0 0 0;
 }

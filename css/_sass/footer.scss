@@ -1,11 +1,16 @@
 footer {
+	position: relative;
 	@include smallCapsProximaNova;
-	color: $white;
 	background: url("../images/terrainMapsGrey.jpg");
 	background-size: 1600px 937px;
 	background-position: center;
-	padding: $verticalPadding $horizontalPadding;
+	padding: $verticalPadding*1.75 $horizontalPadding;
 	overflow: hidden;
+}
+
+footer a {
+	display: block;
+	color: $white;
 }
 
 ul.additionalLinks {
@@ -13,11 +18,47 @@ ul.additionalLinks {
 	width: auto;
 	float: left;
 	list-style: none;
-	margin: 0;
+	margin: 0 0 $verticalPadding*10 0;
 	padding: 0;
 }
 
 ul.additionalLinks > li {
 	float: left;
-	margin: 0 0 0 2%;
+	margin: 0 $horizontalPadding*2 0 0;
+}
+
+ul.socialLinks {
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.socialLinks li {
+	float: left;
+	display: block;
+	margin: 0 $horizontalPadding 0 0;
+}
+
+ul.socialLinks li:last-child {
+	margin: 0;
+}
+
+ul.socialLinks li a.register {
+	display: inline-block;
+	padding: 20px 18px 20px 20px;
+	margin: -17px 0 0 0;
+	border: 2px solid $lightGrey;
+}
+
+.medicineHatLogoFooter {
+	position: absolute;
+	bottom: $verticalPadding*1.75;
+	left: $horizontalPadding;
+}
+
+.landAndPropertiesLogoFooter {
+	position: absolute;
+	bottom: $verticalPadding*1.75;
+	right: $horizontalPadding;
 }
