@@ -74,8 +74,11 @@
 		border-bottom: 3px solid $lightGrey;
 	}
 
-	ul.headerNavigationLinks > li > a:active,
-	ul.headerNavigationLinks > li > a.current {
+	.vision ul.headerNavigationLinks > li > a.vision,
+	.amenities ul.headerNavigationLinks > li > a.amenities,
+	.lots ul.headerNavigationLinks > li > a.lots,
+	.news ul.headerNavigationLinks > li > a.news,
+	.contact ul.headerNavigationLinks > li > a.contact {
 		border-bottom: 3px solid $orange;
 	}
 
