@@ -1,3 +1,93 @@
 form {
 	@include smallCapsProximaNova;
+	border: none;
+	outline: none;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid $superLightGrey;
+	border-right: 1px solid $superLightGrey;
+	border-bottom: none;
+	border-left: none;
+}
+
+legend {
+	display: none;
+}
+
+.formBlock {
+	display: block;
+	float: left;
+	width: 50%;
+	border-left: 1px solid $superLightGrey;
+	border-bottom: 1px solid $superLightGrey;
+}
+
+label {
+	display: none;
+}
+
+button, input, optgroup, select, textarea {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	height: 120px;
+	max-height: 120px;
+	@include smallCapsProximaNova;
+	line-height: 1.8;
+	vertical-align: middle;
+	outline: 0px;
+	border: 0px;
+	padding: 5% 7%;
+}
+
+button:hover,
+input:hover,
+optgroup:hover,
+select:hover,
+textarea:hover {
+	background: $superLightGrey;
+}
+
+button:focus,
+input:focus,
+optgroup:focus,
+select:focus,
+textarea:focus {
+	outline: 0px;
+	background: $orange;
+	color: $white;
+}
+
+input::-webkit-input-placeholder {
+    color: $lightGrey;
+}
+input:focus::-webkit-input-placeholder {
+    color: $white;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: $lightGrey;
+}
+input:focus:-moz-placeholder {
+    color: $white;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: $lightGrey;
+}
+input:focus::-moz-placeholder {
+    color: $white;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: $lightGrey;
+}
+input:focus:-ms-input-placeholder {
+    color: $white;
 }

@@ -66,13 +66,13 @@ section.featured {
 // The Homepage Grid
 //
 
-ul.homePageList {
+ul.visionPageList {
 	width: 100%;
 	padding: 0;
 	margin: 0;
 }
 
-ul.homePageList li {
+ul.visionPageList li {
 	display: block;
 	position: relative;
 	float: left;
@@ -83,44 +83,16 @@ ul.homePageList li {
 	border-bottom: 1px solid $lightGrey;
 }
 
-ul.homePageList li:last-child {
-	padding: 0;
-}
-
-/* The watchFlyover vertically centred horizontally and vertically */
-/* This parent can be any width and height */
-.watchFlyover {
-	height: 100%;
-	text-align: center;
-}
- 
-/* The ghost, nudged to maintain perfect centering */
-.watchFlyover:before {
-	content: '';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-	margin-right: -0.25em; /* Adjusts for spacing */
-}
-
-/* The element to be centered, can
-   also be of any width and height */
-.watchFlyoverCentred {
-	display: inline-block;
-	vertical-align: middle;
-	width: auto;
-}
-
-ul.homePageList li .top {
+ul.visionPageList li .top {
 	overflow: hidden;
 }
 
-ul.homePageList li .bottom {
+ul.visionPageList li .bottom {
 	position: absolute;
 	bottom: $verticalPadding*1.5;
 }
 
-ul.homePageList li p {
+ul.visionPageList li p {
 	font-size: 1.4em;
 	color: $lightGrey;
 }
@@ -131,20 +103,21 @@ span.videoPlayIcon {
 	margin: 0 20px;
 }
 
-ul.homePageList li h2 {
+ul.visionPageList li h2 {
 	float: left;
-	display: inline-block;
+	display: block;
+	width: 100%;
 	letter-spacing: $smallCapsLetterSpacing/2;
 	margin: 0;
 }
 
-ul.homePageList li .mobileNewsAdvanceIcon {
+ul.visionPageList li .mobileNewsAdvanceIcon {
 	display: inline-block;
 	float: right;
 	margin: 0;
 }
 
-ul.homePageList li a {
+ul.visionPageList li a {
 	@include smallCapsProximaNova;
 }
 

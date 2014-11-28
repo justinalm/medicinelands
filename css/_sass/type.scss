@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: $sans-serif-type;
 	font-weight: $headings-font-weight;
 	text-transform: uppercase;
-	letter-spacing: 10px;
+	letter-spacing: $smallCapsLetterSpacing;
 }
 
 h2.greyBackground {

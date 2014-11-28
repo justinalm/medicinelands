@@ -15,47 +15,24 @@ bodyClass: contact
 </section>
 
 <section>
-  <div class="pad">
-    <!-- Forms -->
-    <form>
-      <fieldset>
-        <legend>Legend</legend>
-        <div>
-          <label for="inputEmail">Email</label>
-        </div>
-        <div>
-          <input type="text" id="inputEmail" placeholder="Email">
-        </div>
-        <div>
-          <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-        </div>
-        <div>
-          <input type="password" id="inputPassword" placeholder="Password">
-          <div>
-            <label>
-              <input type="checkbox"> Checkbox
-            </label>
-          </div>
-        </div>
-        <div>
-          <label for="textArea" class="col-lg-2 control-label">Textarea</label>
-        </div>
-        <div>
-          <textarea  rows="3" id="textArea"></textarea>
-        </div>
-        <div>
-          A longer block of help text that breaks onto a new line and may extend beyond one line.
-        </div>
-        <div>
-          <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-          Option one is this</label>
-        </div>
-        <div>
-          <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          Option two can be something else</label>
-        </div>
+  <!-- Forms -->
+  <form>
+    <fieldset>
+      <legend>Legend</legend>
+      <label for="inputName">Full Name</label>
+      <div class="formBlock">
+        <input type="text" id="inputName" placeholder="Full Name" required="required">
+      </div>
+      
+      <label for="inputEmail">your@email.com</label>
+      <div class="formBlock">
+        <input type="email" id="inputEmail" placeholder="your@email.com" required="required">
+      </div>
+      <label for="textArea" class="col-lg-2 control-label">Message</label>
+      <div class="formBlock">
+        <textarea  rows="2" id="textArea" placeholder="How can we help you and what is the best way for us to contact you?" required="required"></textarea>
+      </div>
+      <!-- <div class="formBlock">
         <select id="select">
           <option>1</option>
           <option>2</option>
@@ -63,9 +40,10 @@ bodyClass: contact
           <option>4</option>
           <option>5</option>
         </select>
-        <button class="btn btn-default">Cancel</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </fieldset>
-    </form>
-  </div><!-- /pad -->
+      </div> -->
+      <div class="formBlock">
+        <button type="submit">Submit</button>
+      </div>
+    </fieldset>
+  </form>
 </section>
