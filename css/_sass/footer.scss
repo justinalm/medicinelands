@@ -1,6 +1,7 @@
 footer {
 	position: relative;
 	@include smallCapsProximaNova;
+	letter-spacing: $smallCapsLetterSpacing/2;
 	background: url("../images/terrainMapsGrey.jpg");
 	background-size: 1600px 937px;
 	background-position: center;
@@ -28,7 +29,7 @@ ul.additionalLinks > li {
 }
 
 ul.socialLinks {
-	float: right;
+	float: left;
 	list-style: none;
 	margin: 0;
 	padding: 0;

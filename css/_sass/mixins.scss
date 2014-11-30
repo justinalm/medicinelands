@@ -11,10 +11,19 @@
 	letter-spacing: 10px;
 }
 
-@mixin navigationShadow() {
-	-webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+@mixin learnMoreLinks() {
+	font-family: $sans-serif-type;
+	font-weight: 600;
+	font-size: 0.8em;
+	line-height: $headings-line-height;
+	color: $darkGrey;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin: 0;
+}
+
+@mixin navigationBorder() {
+	border-bottom: 1px solid #DDDDDD;
 }
 
 @mixin boxSizing() {
@@ -24,11 +33,19 @@
 }
 
 @mixin buttonBorder() {
-	border: 3px solid $darkGrey;
+	border: 4px solid $darkGrey;
 }
 
 @mixin trasition() {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+}
+
+@mixin garamondLightGrey() {
+	font-family: $serif-type;
+	font-weight: normal;
+	font-size: 1.2em;
+	line-height: 1.75em;
+	color: $lightGrey;
 }

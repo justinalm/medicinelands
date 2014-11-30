@@ -26,6 +26,21 @@ h2.greyBackground {
 }
 
 p {
+	color: $lightGrey;
 	font-family: $serif-type;
 	font-weight: normal;
+	font-size: 1.2em;
+	line-height: 1.75em;
+}
+
+span.underlinedNumeral {
+	display: inline-block;
+	vertical-align: top;
+	letter-spacing: normal;
+	padding: 0px 0 5px 0;
+	margin: 0 20px 13px 0;
+	border-bottom: 4px solid $black;
+	font-family: $serif-type;
+	font-style: italic;
+	color: rgb(146,148,150);
 }

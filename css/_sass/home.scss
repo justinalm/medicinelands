@@ -14,6 +14,7 @@ section.featured {
 	margin: 0;
 	text-align: center;
 }
+
 .featureBackgroundImage:before {
 	content: '';
 	display: inline-block;
@@ -25,6 +26,10 @@ section.featured {
 .featureBackgroundImage img {
 	width: 100%;
 	height: 100%;
+}
+
+.secondaryHeaders {
+	padding: 7.55% 2%;
 }
 
 .featureText {
@@ -41,7 +46,6 @@ section.featured {
 
 .featureText p {
 	@include smallCapsProximaNova;
-	font-weight: 500;
 	font-size: 1em;
 	color: $white;
 	margin: 0 auto $verticalPadding*1.5 auto;
@@ -50,11 +54,11 @@ section.featured {
 .featureText a {
 	display: inline-block;
 	color: $white;
-	font-size: 0.5em;
+	font-size: 0.8em;
 	text-transform: uppercase;
 	letter-spacing: $smallCapsLetterSpacing;
 	border-color: $white;
-	padding: $verticalPadding/1.5 $horizontalPadding/2 $verticalPadding/1.5 $verticalPadding*1.5;
+	padding: 13.33333px 15px 13.33333px 25px;
 	margin: 0 auto;
 }
 
@@ -121,7 +125,7 @@ ul.homePageList li .bottom {
 }
 
 ul.homePageList li p {
-	font-size: 1.4em;
+	@include garamondLightGrey;
 	color: $lightGrey;
 }
 
@@ -144,8 +148,8 @@ ul.homePageList li .mobileNewsAdvanceIcon {
 	margin: 0;
 }
 
-ul.homePageList li a {
-	@include smallCapsProximaNova;
+ul.homePageList li p a {
+	@include learnMoreLinks;
 }
 
 ul.newHeadlines {

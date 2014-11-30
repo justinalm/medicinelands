@@ -31,7 +31,7 @@ ul.amenitiesTabs li.current {
 
 .amenitiesTabContent {
 	display: none;
-	background: #ededed;
+	background: $white;
 	text-align: center;
 	line-height: 0;
 	overflow: hidden;
@@ -68,16 +68,6 @@ ul.amenitiesLists li p {
 	margin: 0 0 $verticalPadding 0;
 }
 
-ul.amenitiesLists > li > h2 > span.tabNumeral {
-	display: inline-block;
-	vertical-align: top;
-	font-size: 12px;
-	letter-spacing: normal;
-	padding: 5px 0 0 0;
-	margin-right: 13px;
-	border-bottom: 2px solid;
-}
-
 //
 // Tabs for the Mapbox Embeds
 //
@@ -111,7 +101,7 @@ ul.mapsTabs li.current {
 
 .tab-content {
 	display: none;
-	background: #ededed;
+	background: $white;
 	text-align: center;
 	line-height: 0;
 	overflow: hidden;

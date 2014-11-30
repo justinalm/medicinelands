@@ -9,11 +9,12 @@
 	line-height: 0;
 	background: $white;
 	@include trasition;
+	opacity: .98;
 }
 
 .shrink {
 	height: 72px;
-	@include navigationShadow;
+	@include navigationBorder;
 }
 
 .headerNavigation {

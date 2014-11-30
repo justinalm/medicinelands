@@ -27,6 +27,10 @@ section.featured {
 	height: 100%;
 }
 
+.secondaryHeaders {
+	padding: 7.55% 2%;
+}
+
 .featureText {
 	color: $white;
 	display: inline-block;
@@ -41,21 +45,9 @@ section.featured {
 
 .featureText p {
 	@include smallCapsProximaNova;
-	font-weight: 500;
 	font-size: 1em;
 	color: $white;
 	margin: 0 auto $verticalPadding*1.5 auto;
-}
-
-.featureText a {
-	display: inline-block;
-	color: $white;
-	font-size: 0.5em;
-	text-transform: uppercase;
-	letter-spacing: $smallCapsLetterSpacing;
-	border-color: $white;
-	padding: $verticalPadding/1.5 $horizontalPadding/2 $verticalPadding/1.5 $verticalPadding*1.5;
-	margin: 0 auto;
 }
 
 .button {
@@ -89,12 +81,15 @@ ul.visionPageList li .top {
 
 ul.visionPageList li .bottom {
 	position: absolute;
+	left: $horizontalPadding*2;
+	right: $horizontalPadding*2;
 	bottom: $verticalPadding*1.5;
+
 }
 
 ul.visionPageList li p {
-	font-size: 1.4em;
-	color: $lightGrey;
+	@include garamondLightGrey;
+	margin-bottom: 0;
 }
 
 span.videoPlayIcon {
