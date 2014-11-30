@@ -1,4 +1,44 @@
 //
+// Tabs for the Vision Page
+//
+
+ul.visionTabs {
+	list-style: none;
+	background: $darkGrey;
+	@include smallCapsProximaNova;
+	color: $white;
+	text-align: center;
+	line-height: 0;
+	margin: 0px;
+	padding: 25px;
+	overflow: hidden;
+}
+
+ul.visionTabs li {
+	display: inline-block;
+	background: none;
+	text-align: center;
+	padding: 25px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+ul.visionTabs li.current {
+	padding: 22px;
+	@include buttonBorder;
+	border-color: $orange;
+}
+
+.visionTabContent {
+	display: none;
+	overflow: hidden;
+}
+
+.visionTabContent.current {
+	display: inherit;
+}
+
+//
 // Tabs for the Amenities Features
 //
 

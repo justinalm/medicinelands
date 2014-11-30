@@ -1,60 +1,4 @@
 //
-// Homepage Features Carousel
-//
-section.featured {
-	max-width: 100% !important;
-	width: 100% !important;
-	padding: 0 !important;
-	margin: 0 auto;
-}
-
-.featureBackgroundImage {
-	height: auto;
-	padding: 10% 2%;
-	margin: 0;
-	text-align: center;
-}
-.featureBackgroundImage:before {
-	content: '';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-	margin-right: -0.25em;
-}
-
-.featureBackgroundImage img {
-	width: 100%;
-	height: 100%;
-}
-
-.secondaryHeaders {
-	padding: 7.55% 2%;
-}
-
-.featureText {
-	color: $white;
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0 auto;
-}
-
-.featureText h2 {
-	font-size: 4em;
-	margin: 0 0 $verticalPadding*0.75 0;
-}
-
-.featureText p {
-	@include smallCapsProximaNova;
-	font-size: 1em;
-	color: $white;
-	margin: 0 auto $verticalPadding*1.5 auto;
-}
-
-.button {
-	@include buttonBorder;
-}
-
-//
 // The Homepage Grid
 //
 
@@ -114,36 +58,4 @@ ul.visionPageList li .mobileNewsAdvanceIcon {
 
 ul.visionPageList li a {
 	@include smallCapsProximaNova;
-}
-
-ul.newHeadlines {
-	display: block;
-	width: 100%;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-ul.newHeadlines li {
-	display: block;
-	width: 100%;
-	padding: 0;
-	margin: 0 0 20px 0;
-}
-
-.homeAmenitiesPicture {
-	float: left;
-	background: url('/images/vegetableMarket.jpg');
-	background-size: cover;
-	background-position: center;
-	width: 50%;
-	height: 320px;
-}
-
-.homeAmenitiesText {
-	float: right;
-	width: 50%;
-	height: 320px;
-	padding: $verticalPadding*1.5 $horizontalPadding*2;
-	background: $tan;
 }

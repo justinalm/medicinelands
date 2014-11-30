@@ -18,6 +18,17 @@ $(document).ready(function(){
 	    }
 	});
 
+	/* Magnific PopUp Videos for Flyovers */
+
+    $('.popUpVideo').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+    });
+
 	/* The Amenities Nav Tabs */
 
     $('ul.amenitiesTabs li').click(function(){
@@ -42,6 +53,19 @@ $(document).ready(function(){
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
 		$('.tab-content.current > ul.mapLists').fadeIn('1000');
+	});
+
+	/* The Vision Nav Tabs */
+
+    $('ul.visionTabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.visionTabs li').removeClass('current');
+		$('.visionTabContent').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+		$('.visionTabContent.current > ul.visionTabs').fadeIn('1000');
 	});
 	
 });
