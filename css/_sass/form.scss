@@ -41,6 +41,7 @@ button, input, optgroup, select, textarea {
 	outline: 0px;
 	border: 0px;
 	padding: 5% 7%;
+	@include trasition;
 }
 
 button:hover,

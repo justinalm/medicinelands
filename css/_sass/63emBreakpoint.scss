@@ -71,6 +71,7 @@
 		padding: 25px 0 15px 0;
 		margin: 0 10px;
 		border-bottom: 3px solid $white;
+		@include trasition;
 	}
 
 	ul.headerNavigationLinks > li > a:hover {
