@@ -35,7 +35,12 @@ ul.additionalLinks > li.additionalLinksRegister a.register {
 	display: inline-block;
 	padding: 20px 18px 20px 20px;
 	margin: -17px 0 0 0;
-	border: 4px solid $white;
+	border: 3px solid $white;
+}
+
+ul.additionalLinks > li.additionalLinksRegister a.register:hover {
+	background: $white;
+	color: $darkGrey;
 }
 
 ul.additionalLinks > li.medicineHatMark {
@@ -67,7 +72,14 @@ ul.socialLinks li a.register {
 	display: none;
 	padding: 20px 18px 20px 20px;
 	margin: -17px 0 0 0;
-	border: 4px solid $white;
+	border: 3px solid $white;
+}
+
+ul.socialLinks li a.register:hover {
+	color: $darkGrey;
+	background: $white;
+	border: 3px solid $white;
+	@include trasition;
 }
 
 .landAndPropertiesLogoFooter {
@@ -75,5 +87,5 @@ ul.socialLinks li a.register {
 	bottom: $verticalPadding*1.9;
 	right: $horizontalPadding;
 	width: 50%;
-	max-width: 314px;
+	max-width: 290px;
 }

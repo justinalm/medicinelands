@@ -14,7 +14,7 @@ ul.visionPageList li {
 	float: left;
 	width: 100%;
 	height: 360px;
-	padding: $verticalPadding*1.5 $horizontalPadding*2;
+	padding: $verticalPadding*1.5;
 	overflow: hidden;
 	border-bottom: 1px solid $lightGrey;
 }
@@ -25,20 +25,14 @@ ul.visionPageList li .top {
 
 ul.visionPageList li .bottom {
 	position: absolute;
-	left: $horizontalPadding*2;
-	right: $horizontalPadding*2;
+	left: $verticalPadding*1.5;
+	right: $horizontalPadding*1.5;
 	bottom: $verticalPadding*1.5;
 }
 
 ul.visionPageList li p {
 	@include garamondLightGrey;
 	margin-bottom: 0;
-}
-
-span.videoPlayIcon {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0 20px;
 }
 
 ul.visionPageList li h2 {

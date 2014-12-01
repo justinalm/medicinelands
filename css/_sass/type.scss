@@ -3,6 +3,16 @@ body {
 	font-size: 0.9em;
 }
 
+::-moz-selection {
+	color: $white;
+    background: $orange;
+}
+
+::selection {
+    color: $white;
+    background: $orange;
+}
+
 a {
 	text-decoration: none;
 	color: $darkGrey;
@@ -19,18 +29,19 @@ h2.greyBackground {
 	display: block;
 	color: $white;
 	background: $darkGrey;
-	height: 60px;
-	font-size: 18px;
+	height: auto;
+	font-size: $h2FontSize;
 	text-align: center;
-	line-height: 60px;
+	line-height: 1.1;
 	margin: 0;
+	padding: 20px;
 }
 
 p {
 	color: $lightGrey;
 	font-family: $serif-type;
 	font-weight: normal;
-	font-size: 1.2em;
+	font-size: $paragraphFontSize;
 	line-height: 1.75em;
 }
 

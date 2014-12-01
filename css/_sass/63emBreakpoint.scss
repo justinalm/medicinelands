@@ -8,7 +8,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 135px;
+		height: 125px;
 		line-height: 0;
 		background: $white;
 		@include trasition;
@@ -29,7 +29,7 @@
 		display: block;
 		float: left;
 		vertical-align: top;
-		padding: 52px 16px 52px 36px;
+		padding: 50px 16px 50px 32px;
 		@include trasition;
 	}
 
@@ -47,11 +47,10 @@
 		list-style: none;
 		text-align: right;
 		font-family: $sans-serif-type;
-		font-size: 12px;
 		font-weight: 600;
 		text-transform: uppercase;
 		letter-spacing: 3px;
-		padding: 30px 20px 40px 0;
+		padding: 25px 20px 30px 0;
 		margin: 0;
 		@include trasition;
 	}
@@ -68,6 +67,7 @@
 	ul.headerNavigationLinks > li > a {
 		display: inline-block;
 		vertical-align: middle;
+		font-size: $navLinksFontSize;
 		padding: 25px 0 15px 0;
 		margin: 0 10px;
 		border-bottom: 3px solid $white;
@@ -78,38 +78,55 @@
 	}
 
 	.vision ul.headerNavigationLinks > li > a.vision,
+	.concept ul.headerNavigationLinks > li > a.concept,
 	.amenities ul.headerNavigationLinks > li > a.amenities,
-	.lots ul.headerNavigationLinks > li > a.sales,
-	.news ul.headerNavigationLinks > li > a.news,
-	.contact ul.headerNavigationLinks > li > a.contact {
+	.sales ul.headerNavigationLinks > li > a.sales,
+	.news ul.headerNavigationLinks > li > a.news {
 		border-bottom: 3px solid $orange;
 	}
 
 	ul.headerNavigationLinks > li > a.registerHeader {
 		padding: 20px 18px 20px 20px;
-		margin: 14px 18px 8px 4px;
-		border: 4px solid #929496;
+		margin: 12px 11px 8px 4px;
+		border: 3px solid #929496;
+	}
+
+	ul.headerNavigationLinks > li > a.registerHeader:hover {
+		color: $white;
+		background: $orange;
+		border: 3px solid $orange;
+	}
+
+	.register ul.headerNavigationLinks > li > a.registerHeader {
+		color: $orange;
+		border: 3px solid $orange;
+	}
+
+	.register ul.headerNavigationLinks > li > a.registerHeader:hover {
+		color: $white;
+		background: $orange;
+		border: 3px solid $orange;
 	}
 
 	/* Page Structure */
 
 	article {
-		margin: 135px 0 0 0;
+		margin: 125px 0 0 0;
 	}
 
 	/* Features */
 
 	.featureText h2 {
-		font-size: 3.5em;
+		font-size: 3em;
 		letter-spacing: 20px;
 	}
 
 	p.proximaNovaSubheader {
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 
 	.featureText a {
-		font-size: 0.6em;
+		font-size: 0.5em;
 	}
 
 
@@ -122,7 +139,7 @@
 	}
 
 	h2.videoPlayTitle {
-		font-size: 1.4em !important;
+		font-size: 1.2em !important;
 	}
 
 	.homeAmenitiesPicture {
@@ -151,6 +168,35 @@
 		left: $horizontalPadding*2;
 		right: $horizontalPadding*2;
 		bottom: $verticalPadding*1.5;
+	}
+
+	/* Concept Page */
+
+	ul.amenitiesLists li {
+		width: 48%;
+	}
+
+	/* Amenities Page */
+	.mapLists {
+		margin: 20px 25px 20px 20px;
+	}
+
+	.mapLists:last-child {
+		margin: 20px 25px 20px 20px;
+	}
+
+	ul.mapsTabs li {
+		width: 20%;
+		border-right: 1px solid #ededed;
+	}
+
+	ul.mapsTabs li:nth-child(even) {
+		border-right: 1px solid #ededed;
+	}
+
+	ul.mapsTabs li:last-child {
+		float: left;
+		border: none;
 	}
 
 	/* Footer */

@@ -51,7 +51,7 @@ section.featured {
 	font-family: $serif-type;
 	font-style: italic;
 	text-transform: none;
-	font-size: 1.6em;
+	font-size: 1.4em;
 	color: $white;
 	margin: 0 auto $verticalPadding*1.5 auto;
 }
@@ -99,7 +99,7 @@ ul.homePageList li {
 	float: left;
 	width: 100%;
 	height: 320px;
-	padding: $verticalPadding*1.5 $horizontalPadding*2;
+	padding: 30px;
 	overflow: hidden;
 	border-bottom: 1px solid $lightGrey;
 }
@@ -138,7 +138,7 @@ ul.homePageList li .top {
 
 ul.homePageList li .bottom {
 	position: absolute;
-	bottom: $verticalPadding*1.5;
+	bottom: 30px;
 }
 
 ul.homePageList li p {
@@ -149,7 +149,7 @@ ul.homePageList li p {
 ul.homePageList li h2 {
 	float: left;
 	display: inline-block;
-	font-size: $h2FontSize;
+	font-size: $h2FeatureListFontSize;
 	letter-spacing: $smallCapsLetterSpacing/2;
 	margin: 0;
 }
@@ -161,7 +161,7 @@ h2.videoPlayTitle {
 span.videoPlayIcon {
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0 20px;
+	margin: 0 20px 0 15px;
 }
 
 ul.homePageList li .mobileNewsAdvanceIcon {
@@ -202,7 +202,7 @@ ul.newHeadlines li {
 	float: left;
 	width: 100%;
 	height: 320px;
-	padding: $verticalPadding*1.5 $horizontalPadding*2;
+	padding: 30px;
 	background: $tan;
 }
 
