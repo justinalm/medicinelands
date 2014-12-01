@@ -13,11 +13,15 @@ ul.postList {
 ul.postList li {
 	padding: 0 0 $verticalPadding*0.75 0;
 	margin: 0 0 $verticalPadding*2 0;
-	border-bottom: 1px solid $darkGrey;
+	border-bottom: 1px solid $lightGrey;
 }
 
 ul.postList li:last-child {
 	padding: 0 0 $verticalPadding*0.75 0;
 	margin: 0;
 	border-bottom: none;
+}
+
+ul.postList li p:last-child::after {
+	content: " ◊";
 }
