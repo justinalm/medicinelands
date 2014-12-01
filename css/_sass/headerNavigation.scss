@@ -1,7 +1,7 @@
 
 .header {
 	position: fixed;
-	z-index: 9999;
+	z-index: 9998;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -27,9 +27,9 @@
 	display: block;
 	float: left;
 	vertical-align: top;
-	width: 80%;
+	width: 75%;
 	max-width: 354px;
-	padding: 24px;
+	padding: 20px;
 	@include trasition;
 }
 
@@ -37,8 +37,8 @@
 	display: block;
 	float: left;
 	vertical-align: top;
-	width: 80%;
-	padding: 24px;
+	width: 75%;
+	padding: 20px;
 }
 
 .hamburgerMenuIcon {
@@ -51,4 +51,50 @@
 
 ul.headerNavigationLinks {
 	display: none;
+}
+
+/* Mobile Navigation */
+ul.mobileNav {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	list-style: none;
+	background: rgba(0, 0, 0, 0.85);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 20px;
+	margin: 0;
+	overflow: scroll;
+}
+
+ul.mobileNav li {
+	max-width: 280px;
+	margin: 0 auto;
+}
+
+ul.mobileNav li a {
+	display: block;
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	padding: 10px 0 10px 20px;
+	margin: 0 0 1em 0;
+}
+
+ul.mobileNav li:nth-child(8) {
+	margin: 3em auto 1em auto;
+}
+
+ul.mobileNav li:nth-child(8),
+ul.mobileNav li:nth-child(9),
+ul.mobileNav li:nth-child(10),
+ul.mobileNav li:nth-child(11) {
+	font-size: 0.6em;
 }

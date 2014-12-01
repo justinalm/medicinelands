@@ -18,6 +18,15 @@ $(document).ready(function(){
 	    }
 	});
 
+	/* Mobile Nav Show and Hide */
+	$(".hamburgerMenuIcon").click(function(){
+	  $("ul.mobileNav").fadeIn(500);
+	});
+
+	$(".closeMobileMenu").click(function(){
+	  $("ul.mobileNav").fadeOut(500);
+	});
+
 	/* Magnific PopUp Videos for Flyovers */
 
     $('.popUpVideo').magnificPopup({
