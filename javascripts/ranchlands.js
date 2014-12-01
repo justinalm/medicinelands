@@ -21,7 +21,6 @@ $(document).ready(function(){
 	/* Magnific PopUp Videos for Flyovers */
 
     $('.popUpVideo').magnificPopup({
-      disableOn: 700,
       type: 'iframe',
       mainClass: 'mfp-fade',
       removalDelay: 160,

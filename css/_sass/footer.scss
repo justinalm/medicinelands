@@ -15,27 +15,31 @@ footer a {
 }
 
 ul.additionalLinks {
-	font-size: 12px;
+	font-size: 0.8em;
 	width: auto;
 	float: left;
 	list-style: none;
-	margin: 0 0 $verticalPadding*10 0;
+	margin: 0 0 $verticalPadding 0;
 	padding: 0;
 }
 
 ul.additionalLinks > li {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 0 $horizontalPadding/1.5 0 0;
+	width: 100%;
+	padding: $verticalPadding/2 0;
 	margin: 0 $horizontalPadding/1.5 0 0;
-	border-right: 2px solid $white;
 }
 
-ul.additionalLinks > li:first-child,
-ul.additionalLinks > li:last-child {
-	padding: 0;
-	margin: 0 $horizontalPadding/1.5 0 0;
-	border-right: none;
+ul.additionalLinks > li.additionalLinksRegister a.register {
+	display: inline-block;
+	padding: 20px 18px 20px 20px;
+	margin: -17px 0 0 0;
+	border: 4px solid $white;
+}
+
+ul.additionalLinks > li.medicineHatMark {
+	display: none;
 }
 
 ul.socialLinks {
@@ -60,20 +64,16 @@ ul.socialLinks li:last-child {
 }
 
 ul.socialLinks li a.register {
-	display: inline-block;
+	display: none;
 	padding: 20px 18px 20px 20px;
 	margin: -17px 0 0 0;
 	border: 4px solid $white;
 }
 
-.medicineHatLogoFooter {
-	position: absolute;
-	bottom: $verticalPadding*1.75;
-	left: $horizontalPadding;
-}
-
 .landAndPropertiesLogoFooter {
 	position: absolute;
-	bottom: $verticalPadding*1.75;
+	bottom: $verticalPadding*1.9;
 	right: $horizontalPadding;
+	width: 50%;
+	max-width: 314px;
 }

@@ -8,7 +8,7 @@ ul.visionTabs {
 	@include smallCapsProximaNova;
 	color: $white;
 	text-align: center;
-	line-height: 0;
+	line-height: 1.4;
 	margin: 0px;
 	padding: 25px;
 	overflow: hidden;
@@ -48,7 +48,7 @@ ul.amenitiesTabs {
 	@include smallCapsProximaNova;
 	color: $white;
 	text-align: center;
-	line-height: 0;
+	line-height: 1.4;
 	margin: 0px;
 	padding: 25px;
 	overflow: hidden;
@@ -100,8 +100,11 @@ ul.amenitiesLists li {
 }
 
 ul.amenitiesLists li h2 {
+	display: block;
+	font-size: $h2FontSize;
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
 }
 
 ul.amenitiesLists li p {

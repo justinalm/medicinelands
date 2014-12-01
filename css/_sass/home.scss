@@ -40,8 +40,9 @@ section.featured {
 }
 
 .featureText h2 {
-	font-size: 4em;
-	letter-spacing: 20px;
+	font-size: 2em;
+	letter-spacing: 10px;
+	line-height: 1;
 	padding-left: 10px;
 	margin: 0 0 $verticalPadding*0.75 0;
 }
@@ -58,7 +59,8 @@ section.featured {
 p.proximaNovaSubheader {
 	@include smallCapsProximaNova;
 	font-style: normal;
-	font-size: 1em;
+	font-size: 0.8em;
+	line-height: 1.6;
 	color: $white;
 	margin: 0 auto $verticalPadding*1.5 auto;
 }
@@ -67,7 +69,7 @@ p.proximaNovaSubheader {
 	display: inline-block;
 	color: $white;
 	font-family: $sans-serif-type;
-	font-size: 0.6em;
+	font-size: 0.4em;
 	font-style: normal;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -144,17 +146,22 @@ ul.homePageList li p {
 	color: $lightGrey;
 }
 
+ul.homePageList li h2 {
+	float: left;
+	display: inline-block;
+	font-size: $h2FontSize;
+	letter-spacing: $smallCapsLetterSpacing/2;
+	margin: 0;
+}
+
+h2.videoPlayTitle {
+	font-size: 0.8em !important;
+}
+
 span.videoPlayIcon {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 20px;
-}
-
-ul.homePageList li h2 {
-	float: left;
-	display: inline-block;
-	letter-spacing: $smallCapsLetterSpacing/2;
-	margin: 0;
 }
 
 ul.homePageList li .mobileNewsAdvanceIcon {
@@ -187,14 +194,19 @@ ul.newHeadlines li {
 	background: url('/images/vegetableMarket.jpg');
 	background-size: cover;
 	background-position: center;
-	width: 50%;
+	width: 100%;
 	height: 320px;
 }
 
 .homeAmenitiesText {
-	float: right;
-	width: 50%;
+	float: left;
+	width: 100%;
 	height: 320px;
 	padding: $verticalPadding*1.5 $horizontalPadding*2;
 	background: $tan;
+}
+
+.heightAutoHelper {
+	height: auto !important;
+	min-height: 320px !important;
 }

@@ -1,4 +1,7 @@
-@media all and (min-width: 1020px) {
+@media all and (min-width: 63em) {
+
+	/* Navigation */
+
 	.header {
 		position: fixed;
 		z-index: 9999;
@@ -26,23 +29,17 @@
 		display: block;
 		float: left;
 		vertical-align: top;
-		width: 25%;
 		padding: 52px 16px 52px 36px;
 		@include trasition;
 	}
 
 	.header.shrink .logo {
-		display: block;
-		float: left;
-		vertical-align: top;
-		width: 25%;
 		padding: 22px;
 	}
 
 	ul.headerNavigationLinks {
 		display: block;
 		float: right;
-		width: 65%;
 		list-style: none;
 		text-align: right;
 		font-family: $sans-serif-type;
@@ -64,10 +61,10 @@
 	}
 
 	ul.headerNavigationLinks > li > a {
-		border-bottom: 3px solid $white;
-		padding: 25px 0 15px 0;
 		display: inline-block;
-		margin: 0 $horizontalPadding;
+		padding: 25px 0 15px 0;
+		margin: 0 10px;
+		border-bottom: 3px solid $white;
 	}
 
 	ul.headerNavigationLinks > li > a:hover {
@@ -87,17 +84,107 @@
 		margin: 14px 18px 8px 4px;
 		border: 4px solid #929496;
 	}
+
+	/* Page Structure */
+
 	article {
 		margin: 135px 0 0 0;
 	}
+
+	/* Features */
+
+	.featureText h2 {
+		font-size: 3.5em;
+		letter-spacing: 20px;
+	}
+
+	p.proximaNovaSubheader {
+		font-size: 1em;
+	}
+
+	.featureText a {
+		font-size: 0.6em;
+	}
+
+
+
+	/* Home Page */
 
 	ul.homePageList li {
 		width: 50%;
 		border-bottom: none;
 	}
 
+	h2.videoPlayTitle {
+		font-size: 1.4em !important;
+	}
+
+	.homeAmenitiesPicture {
+		float: left;
+		width: 50%;
+	}
+
+	.homeAmenitiesText {
+		float: right;
+		width: 50%;
+	}
+
+	/* Vision Page */
+
 	ul.visionPageList li {
 		width: 50%;
 		border-bottom: none;
+	}
+
+	ul.visionPageList li .top {
+		overflow: hidden;
+	}
+
+	ul.visionPageList li .bottom {
+		position: absolute;
+		left: $horizontalPadding*2;
+		right: $horizontalPadding*2;
+		bottom: $verticalPadding*1.5;
+	}
+
+	/* Footer */
+	ul.additionalLinks {
+		margin: 0 0 $verticalPadding*10 0;
+	}
+
+	ul.additionalLinks > li {
+		display: inline-block;
+		vertical-align: middle;
+		width: auto;
+		padding: 0 $horizontalPadding/1.5 0 0;
+		margin: 0 $horizontalPadding/1.5 0 0;
+		border-right: 2px solid $white;
+	}
+
+	ul.additionalLinks > li.additionalLinksRegister {
+		display: none;
+	}
+
+	ul.additionalLinks > li.medicineHatMark,
+	ul.additionalLinks > li:last-child {
+		padding: 0;
+		margin: 0 $horizontalPadding/1.5 0 0;
+		border-right: none;
+	}
+
+	ul.additionalLinks > li.additionalLinksRegister a.register {
+		display: none;
+	}
+
+	ul.additionalLinks > li.medicineHatMark {
+		display: inline-block;
+	}
+
+	ul.socialLinks li a.register {
+		display: inline-block;
+	}
+
+	.landAndPropertiesLogoFooter {
+		width: auto;
 	}
 }

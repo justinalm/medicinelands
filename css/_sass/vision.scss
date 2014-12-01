@@ -13,7 +13,7 @@ ul.visionPageList li {
 	position: relative;
 	float: left;
 	width: 100%;
-	height: 320px;
+	height: 360px;
 	padding: $verticalPadding*1.5 $horizontalPadding*2;
 	overflow: hidden;
 	border-bottom: 1px solid $lightGrey;
@@ -28,7 +28,6 @@ ul.visionPageList li .bottom {
 	left: $horizontalPadding*2;
 	right: $horizontalPadding*2;
 	bottom: $verticalPadding*1.5;
-
 }
 
 ul.visionPageList li p {
@@ -45,6 +44,7 @@ span.videoPlayIcon {
 ul.visionPageList li h2 {
 	float: left;
 	display: block;
+	font-size: $h2FontSize;
 	width: 100%;
 	letter-spacing: $smallCapsLetterSpacing/2;
 	margin: 0;
