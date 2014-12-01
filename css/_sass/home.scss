@@ -75,8 +75,14 @@ p.proximaNovaSubheader {
 	text-transform: uppercase;
 	letter-spacing: $smallCapsLetterSpacing;
 	border-color: $white;
-	padding: 8px 15px 8px 25px;
+	padding: 0px 8px 0px 16px;
 	margin: 0 auto;
+	@include trasition;
+}
+
+.featureText a:hover {
+	background: $white;
+	color: $darkGrey;
 }
 
 .button {
