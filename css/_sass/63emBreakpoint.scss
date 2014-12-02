@@ -161,6 +161,11 @@
 		border-bottom: none;
 	}
 
+	.triangleLeft,
+	.triangleRight {
+		display: inline-block;
+	}
+
 	ul.visionPageList li .top {
 		overflow: hidden;
 	}

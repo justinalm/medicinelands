@@ -64,6 +64,38 @@ ul.visionPageList li {
 	border-bottom: 1px solid $lightGrey;
 }
 
+.triangleLeft {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 46%;
+	left: 0;
+	width: 13px;
+	height: 25px;
+	background: url('/images/triangleLeft.png');
+	background-size: 13px 25px;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0;
+	margin: 0;
+}
+
+.triangleRight {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 46%;
+	right: 0;
+	width: 13px;
+	height: 25px;
+	background: url('/images/triangleRight.png');
+	background-size: 13px 25px;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0;
+	margin: 0;
+}
+
 ul.visionPageList li .top {
 	overflow: hidden;
 }

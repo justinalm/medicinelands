@@ -27,6 +27,12 @@ $(document).ready(function(){
 	  $("ul.mobileNav").fadeOut(200);
 	});
 
+	/* Flexslider by Woo Themes */
+	// Can also be used with $(document).ready()
+	$('.flexslider').flexslider({
+		animation: "fade"
+	});
+
 	/* Magnific PopUp Videos for Flyovers */
 
     $('.popUpVideo').magnificPopup({

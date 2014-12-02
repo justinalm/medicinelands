@@ -16,33 +16,119 @@ bodyClass: register
 
 <section>
   <!-- Forms -->
-  <form>
+  <form id="register">
     <fieldset>
       <legend>Legend</legend>
-      <label for="inputName">Full Name</label>
       <div class="formBlock">
-        <input type="text" id="inputName" placeholder="Full Name" required="required">
+        <label><span class="formNumeral">01</span> Full Name</label>
+        <input type="text" id="inputName" placeholder="John Doe" required="required">
       </div>
-      
-      <label for="inputEmail">your@email.com</label>
+    
       <div class="formBlock">
+        <label><span class="formNumeral">02</span> Email</label>
         <input type="email" id="inputEmail" placeholder="your@email.com" required="required">
       </div>
-      <label for="textArea" class="col-lg-2 control-label">Message</label>
+
       <div class="formBlock">
-        <textarea  rows="2" id="textArea" placeholder="How can we help you and what is the best way for us to contact you?" required="required"></textarea>
+        <label><span class="formNumeral">03</span> Mailing Address</label>
+        <input type="text" id="inputAddress" placeholder="Ex. 123 Maple Street, Medicine Hat, AB, V6E1G6" required="required">
       </div>
-      <!-- <div class="formBlock">
-        <select id="select">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div> -->
+
       <div class="formBlock">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <label><span class="formNumeral">04</span> Are you a realtor?</label>
+        <select name="youRealtor" form="register">
+          <option></option>
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </div>
+
+      <div class="formBlock">
+        <label><span class="formNumeral">05</span> How did you hear about Ranchlands?</label>
+        <select name="howHear" form="register">
+          <option></option>
+          <option value="Google Search">Google Search</option>
+          <option value="Advertising">Advertising</option>
+        </select>
+      </div>
+
+      <div class="formBlock">
+        <label><span class="formNumeral">06</span> What type of property are you looking for?</label>
+        <select name="howHear" form="register">
+          <option></option>
+          <option value="Multi-unit Dwelling">Multi-unit Dwelling</option>
+          <option value="Single Detached Dwelling">Single Detached Dwelling</option>
+          <option value="Acreage">Acreage</option>
+        </select>
+      </div>
+
+      <div class="formBlock">
+        <label><span class="formNumeral">07</span> What size of property are you looking for?</label>
+        <select name="howHear" form="register">
+          <option></option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </div>
+
+      <div class="formBlock">
+        <label><span class="formNumeral">08</span> What is your current living status?</label>
+        <select name="howHear" form="register">
+          <option></option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </div>
+
+      <div class="formBlock">
+        <label><span class="formNumeral">09</span> I am purchasing as a:</label>
+        <select name="howHear" form="register">
+          <option></option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </div>
+
+      <div class="formBlock">
+        <label><span class="formNumeral">10</span> What age group are you in?</label>
+        <select name="howHear" form="register">
+          <option></option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </div>
+
+      <div class="formBlock">
+        <label><span class="formNumeral">11</span> Preferred contact?</label>
+        <select name="howHear" form="register">
+          <option></option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </div>
+
+      <div class="formBlock">
+        <label><span class="formNumeral">12</span> What price range are you looking in?</label>
+        <select name="howHear" form="register">
+          <option></option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </div>
+
+      <div class="formBlock pad">
+        <h3>Disclaimer</h3>
+        <p class="disclaimer"><em><small>By submitting this form, you agree that Land & Properties and its a liated companies may contact you with information about this project and other projects that may be of interest. If you wish to stop receiving this Information at any time, simply contact Land & Properties and indicate that you do not wish to receive further information. This is currently not an o ering for sale. Any such o ering can only be made with a disclosure statement. E&OE.</small></em></p>
+      </div>
+
+      <div class="formBlock" style="border:none;">
+        <button type="submit" class="submit">Submit</button>
       </div>
     </fieldset>
   </form>
