@@ -4,7 +4,7 @@ form {
 	text-transform: uppercase;
 	color: #000;
 	letter-spacing: 5px;
-	font-size: 1em;
+	font-size: 0.8em;
 	line-height: 1.1;
 	border: none;
 	outline: none;
@@ -43,7 +43,7 @@ label {
 
 .formNumeral {
 	font-family: $serif-type;
-	font-size: 0.8em;
+	font-size: 1em;
 	color: $lightGrey;
 	font-style: italic;
 }
@@ -149,8 +149,15 @@ input:focus:-ms-input-placeholder {
     color: $white;
 }
 
+.disclaimerBlock {
+	padding: 30px 3.5%;
+}
+
 p.disclaimer {
 	text-transform: none;
+	letter-spacing: normal;
+	font-size: 1.5em;
+	font-weight: normal;
 }
 
 button.submit {
@@ -158,6 +165,7 @@ button.submit {
 	border: 4px solid $red;
 	background: $white;
 	color: $red;
+	font-size: 1.4em;
 	margin: 50px auto 0 auto;
 	width: 87%;
 	@include trasition;
