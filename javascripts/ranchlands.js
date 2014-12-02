@@ -44,7 +44,6 @@ $(document).ready(function(){
 
 		$('ul.amenitiesTabs li').removeClass('current');
 		$('.amenitiesTabContent').removeClass('current');
-		$('.visionHeader').removeClass('current');
 
 
 		$(this).addClass('current');
@@ -77,7 +76,6 @@ $(document).ready(function(){
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
 		$('.visionTabContent.current > ul.visionTabs').fadeIn('1000');
-		$('.visionHeader').fadeIn('1000');
 	});
 	
 });
