@@ -1,6 +1,50 @@
 //
-// The Homepage Grid
+// Vision Grid
 //
+
+.visionHeader.current {
+	display: none;
+}
+
+//
+// Tabs for the Vision Page
+//
+
+ul.visionTabs {
+	list-style: none;
+	background: $darkGrey;
+	@include smallCapsProximaNova;
+	color: $white;
+	text-align: center;
+	line-height: 1.4;
+	margin: 0px;
+	padding: 25px;
+	overflow: hidden;
+}
+
+ul.visionTabs li {
+	display: inline-block;
+	background: none;
+	text-align: center;
+	padding: 12px 15px 12px 25px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+ul.visionTabs li.current {
+	padding: 9px 12px 9px 22px;
+	@include buttonBorder;
+	border-color: $orange;
+}
+
+.visionTabContent {
+	display: none;
+	overflow: hidden;
+}
+
+.visionTabContent.current {
+	display: inherit;
+}
 
 ul.visionPageList {
 	width: 100%;
