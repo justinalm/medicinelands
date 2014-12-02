@@ -50,14 +50,14 @@
 		font-weight: 600;
 		text-transform: uppercase;
 		letter-spacing: 3px;
-		padding: 25px 20px 30px 0;
+		padding: 32px 20px 30px 0;
 		margin: 0;
 		@include trasition;
 	}
 
 	.header.shrink ul.headerNavigationLinks {
 		padding: 0;
-		margin: 5px 0 0 0;
+		margin: 5px 10px 0 0;
 	}
 
 	ul.headerNavigationLinks > li {
@@ -72,7 +72,7 @@
 		padding: 25px 0 15px 0;
 		margin: 0 18px;
 		border-bottom: 3px solid $white;
-		@include trasition;
+		@include fadeTransition;
 	}
 
 	ul.headerNavigationLinks > li > a:hover {

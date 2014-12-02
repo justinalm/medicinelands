@@ -42,6 +42,12 @@
 	transition: all 0.3s;
 }
 
+@mixin fadeTransition() {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
 @mixin garamondLightGrey() {
 	font-family: $serif-type;
 	font-weight: normal;
