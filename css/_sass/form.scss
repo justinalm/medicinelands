@@ -119,7 +119,7 @@ textarea:focus {
 }
 
 input::-webkit-input-placeholder {
-    color: $superLightGrey;
+    color: $lightGrey;
 }
 input:focus::-webkit-input-placeholder {
     color: $white;
@@ -127,7 +127,7 @@ input:focus::-webkit-input-placeholder {
 
 /* Firefox < 19 */
 input:-moz-placeholder {
-    color: $superLightGrey;
+    color: $lightGrey;
 }
 input:focus:-moz-placeholder {
     color: $white;
@@ -135,7 +135,7 @@ input:focus:-moz-placeholder {
 
 /* Firefox > 19 */
 input::-moz-placeholder {
-    color: $superLightGrey;
+    color: $lightGrey;
 }
 input:focus::-moz-placeholder {
     color: $white;
@@ -143,7 +143,7 @@ input:focus::-moz-placeholder {
 
 /* Internet Explorer 10 */
 input:-ms-input-placeholder {
-    color: $superLightGrey;
+    color: $lightGrey;
 }
 input:focus:-ms-input-placeholder {
     color: $white;
