@@ -18,13 +18,13 @@ ul.visionTabs li {
 	display: inline-block;
 	background: none;
 	text-align: center;
-	padding: 25px 25px 25px 35px;
+	padding: 12px 15px 12px 25px;
 	cursor: pointer;
 	overflow: hidden;
 }
 
 ul.visionTabs li.current {
-	padding: 22px 22px 22px 32px;
+	padding: 9px 12px 9px 22px;
 	@include buttonBorder;
 	border-color: $orange;
 }
@@ -50,7 +50,7 @@ ul.amenitiesTabs {
 	text-align: center;
 	line-height: 1.4;
 	margin: 0px;
-	padding: 25px;
+	padding: 20px 0;
 	overflow: hidden;
 }
 
@@ -58,13 +58,13 @@ ul.amenitiesTabs li {
 	display: inline-block;
 	background: none;
 	text-align: center;
-	padding: 25px 25px 25px 35px;
+	padding: 12px 15px 12px 25px;
 	cursor: pointer;
 	overflow: hidden;
 }
 
 ul.amenitiesTabs li.current {
-	padding: 22px 22px 22px 32px;
+	padding: 9px 12px 9px 22px;
 	@include buttonBorder;
 	border-color: $orange;
 }

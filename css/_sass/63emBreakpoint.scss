@@ -70,7 +70,7 @@
 		vertical-align: middle;
 		font-size: $navLinksFontSize;
 		padding: 25px 0 15px 0;
-		margin: 0 10px;
+		margin: 0 18px;
 		border-bottom: 3px solid $white;
 		@include trasition;
 	}
@@ -89,7 +89,7 @@
 
 	ul.headerNavigationLinks > li > a.registerHeader {
 		padding: 16px 10px 16px 13px;
-		margin: 12px 11px 8px 4px;
+		margin: 12px 11px 8px 14px;
 		border: 3px solid #929496;
 	}
 
@@ -170,6 +170,14 @@
 		left: $horizontalPadding*2;
 		right: $horizontalPadding*2;
 		bottom: $verticalPadding*1.5;
+	}
+
+	div.visionBlockQuote p {
+		font-size: 1.1em;
+	}
+
+	.blockquoteMedicineHatMark {
+		display: block;
 	}
 
 	/* Concept Page */

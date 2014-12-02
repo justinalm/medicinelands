@@ -6,6 +6,7 @@ ul.visionPageList {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
 }
 
 ul.visionPageList li {
@@ -52,4 +53,45 @@ ul.visionPageList li .mobileNewsAdvanceIcon {
 
 ul.visionPageList li a {
 	@include smallCapsProximaNova;
+}
+
+div.visionBlockQuote {
+	position: relative;
+	height: auto;
+	min-height: 380px;
+	background: url('../images/terrainMapsGrey.jpg');
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	color: #FFF;
+	padding: 30px;
+}
+
+div.visionBlockQuote p {
+	color: $white;
+	font-family: $sans-serif-type;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: 600;
+	letter-spacing: 10px;
+	line-height: 3;
+	width: 100%;
+	max-width: 733px;
+	margin: 0;
+}
+
+div.visionBlockQuote p:last-of-type {
+	font-family: $serif-type;
+	font-style: italic;
+	text-transform: none;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+
+.blockquoteMedicineHatMark {
+	display: none;
+	position: absolute;
+	top: 40px;
+	right: 40px;
 }
