@@ -68,6 +68,9 @@ button, input, optgroup, select, textarea {
 
 select {
 	-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
 	background: url('/images/selectArrow.png');
 	background-repeat: no-repeat;
 	background-position: 90% 63%;
@@ -95,8 +98,7 @@ select:focus {
 	background-repeat: no-repeat;
 	background-position: 90% 63%;
 	background-size: 15px 8px;
-	background-color: $orange;
-	color: $white;
+	background-color: $superLightGrey;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
@@ -114,8 +116,7 @@ input:focus,
 optgroup:focus,
 textarea:focus {
 	outline: 0px;
-	background: $orange;
-	color: $white;
+	background: $superLightGrey;
 }
 
 input::-webkit-input-placeholder {
