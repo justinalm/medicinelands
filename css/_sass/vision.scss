@@ -24,6 +24,12 @@ ul.visionTabs {
 
 ul.visionTabs li {
 	display: inline-block;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul.visionTabs li a {
+	display: block;
 	background: none;
 	text-align: center;
 	padding: 12px 15px 12px 25px;
@@ -31,7 +37,7 @@ ul.visionTabs li {
 	overflow: hidden;
 }
 
-ul.visionTabs li.current {
+ul.visionTabs li.current a {
 	padding: 9px 12px 9px 22px;
 	@include buttonBorder;
 	border-color: $orange;

@@ -30,7 +30,8 @@ $(document).ready(function(){
 	/* Flexslider by Woo Themes */
 	// Can also be used with $(document).ready()
 	$('.flexslider').flexslider({
-		animation: "fade"
+		animation: "fade",
+		touch: true
 	});
 
 	/* Magnific PopUp Videos for Flyovers */
